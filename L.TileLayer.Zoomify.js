@@ -29,7 +29,7 @@ L.TileLayer.Zoomify = L.TileLayer.extend({
     this._imageSize.reverse();
     this._gridSize.reverse();
 
-    this.options.maxZoom = this._gridSize.length - 1;
+    this.options.maxZoom = this._gridSize.length - 2;
 
   },
 
@@ -97,7 +97,7 @@ L.TileLayer.Zoomify = L.TileLayer.extend({
   },
 
   getTileUrl: function (tilePoint) {
-    return this._url + 'TileGroup' + this._getTileGroup(tilePoint) + '/' + this._map.getZoom() + '-' + tilePoint.x + '-' + tilePoint.y + '.jpg';
+    return this._url + 'TileGroup' + this._getTileGroup(tilePoint) + '/' + this._map.getZoom() + '-' + tilePoint.x + '-' + tilePoint.y + '.png';
   },
 
   _getTileGroup: function (tilePoint) {
