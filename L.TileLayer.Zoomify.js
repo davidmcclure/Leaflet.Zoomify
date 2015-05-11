@@ -29,7 +29,7 @@ L.TileLayer.Zoomify = L.TileLayer.extend({
     this._imageSize.reverse();
     this._gridSize.reverse();
 
-    this.options.maxZoom = this._gridSize.length - 2;
+    this.options.maxZoom = this._gridSize.length - 1;
 
   },
 
