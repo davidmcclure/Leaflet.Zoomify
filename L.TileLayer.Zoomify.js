@@ -97,7 +97,7 @@ L.TileLayer.Zoomify = L.TileLayer.extend({
   },
 
   getTileUrl: function (tilePoint) {
-    return this._url + 'TileGroup' + this._getTileGroup(tilePoint) + '/' + this._map.getZoom() + '-' + tilePoint.x + '-' + tilePoint.y + '.png';
+    return this._url + 'TileGroup' + this._getTileGroup(tilePoint) + '/' + this._map.getZoom() + '-' + tilePoint.x + '-' + tilePoint.y + '.jpg';
   },
 
   _getTileGroup: function (tilePoint) {
