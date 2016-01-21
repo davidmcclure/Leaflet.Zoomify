@@ -105,7 +105,7 @@ L.TileLayer.Zoomify = L.TileLayer.extend({
       num = 0,
       gridSize;
 
-    for (z = 0; z < zoom; z++) {
+    for (var z = 0; z < zoom; z++) {
       gridSize = this._gridSize[z];
       num += gridSize.x * gridSize.y;
     }
